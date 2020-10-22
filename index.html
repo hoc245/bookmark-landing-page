@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Landing Page</title>
+    <link rel="icon" href="./assets/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="nav-container">
+            <div id="nav__logo" data-status="toggleClose">
+                <img src="./assets/logo-bookmark.svg" alt="Logo">
+                <img src="./assets/logo-bookmark-white.svg" alt="Logo">
+            </div>
+            <div id="nav__menu-wrapper">
+                <div id="nav__menu-toggle" data-status="collapse">
+                    <span class="__menu-toggle-icon top"></span>
+                    <span class="__menu-toggle-icon middle"></span>
+                    <span class="__menu-toggle-icon bottom"></span>
+                </div>
+                <div id="nav__menu-container">
+                    <ul id="nav__menu">
+                        <li class="__menu-item"><a class="fs-14" href="#">FEATURES</a></li>
+                        <li class="__menu-item"><a class="fs-14" href="#">PRICING</a></li>
+                        <li class="__menu-item"><a class="fs-14" href="#">CONTACT</a></li>
+                    </ul>
+                    <button id="nav__menu-btn"><a class="fs-14" href="#">LOGIN</a></button>
+                    <div id="nav__menu-social">
+                        <span class="__menu-social-icon"><img src="./assets/icon-facebook.svg" alt="facebook icon"></span>
+                        <span class="__menu-social-icon"><img src="./assets/icon-twitter.svg" alt="twitter icon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+         <section class="section" id="intro">
+            <div id="intro-content">
+                <h1 id="intro-title" class="fw-500 fs-40">A Simple Bookmark<br>Manager</h1>
+                <p id="intro-des" class="fs-16px">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <button class="intro-btn"><a href="#">Get it on Chrome</a></button>
+                <button class="intro-btn"><a href="#">Get it on Firefox</a></button>
+            </div>
+            <div id="intro-image">
+                <img src="./assets/illustration-hero.svg" alt="hero image">
+            </div>
+         </section>
+         <section class="section" id="feature">
+            <div id="feature-content">
+                <h1 class="fw-500 fs-30">Features</h1>
+                <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+            </div>
+            <div id="feature-menu-wrapper">
+                <ul id="feature-menu">
+                    <li class="feature-menu-item fw-400 fs-16 active" onclick="featureTag(0)">Simple Bookmarking</li>
+                    <li class="feature-menu-item fw-400 fs-16" onclick="featureTag(1)">Speedy Searching</li>
+                    <li class="feature-menu-item fw-400 fs-16" onclick="featureTag(2)">Easy Sharing</li>
+                </ul>
+            </div>
+            <div id="feature-tab">
+                <div class="feature-tab-item active">
+                    <div class="tab-item-image">
+                        <img src="./assets/illustration-features-tab-1.svg" alt="features-tab-1">
+                    </div>
+                    <div class="tab-item-content">
+                        <h1 class="-item-content-title fw-500 fs-30">Bookmark in one click</h1>
+                        <p class="-item-content-des fw-400 fs-16">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                        <button class="-item-content-btn"><a href="#">More Info</a></button>
+                    </div>
+                </div>
+                <div class="feature-tab-item">
+                    <div class="tab-item-image">
+                        <img src="./assets/illustration-features-tab-2.svg" alt="features-tab-2">
+                    </div>
+                    <div class="tab-item-content">
+                        <h1 class="-item-content-title">Intelligent search</h1>
+                        <p class="-item-content-des">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                        <button class="-item-content-btn"><a href="#">More Info</a></button>
+                    </div>
+                </div>
+                <div class="feature-tab-item">
+                    <div class="tab-item-image">
+                        <img src="./assets/illustration-features-tab-3.svg" alt="features-tab-3">
+                    </div>
+                    <div class="tab-item-content">
+                        <h1 class="-item-content-title">Share your bookmarks</h1>
+                        <p class="-item-content-des">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                        <button class="-item-content-btn"><a href="#">More Info</a></button>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section class="section" id="download">
+             <div id="download-content">
+                 <h1 class="fw-500 fs-30">Download the extension</h1>
+                 <p class="fw-400 fs-16">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+             </div>
+             <div id="download-list">
+                 <div class="download-list-item">
+                     <span class="-list-item-image">
+                         <img src="./assets/logo-chrome.svg" alt="Chrome">
+                     </span>
+                     <h1 class="-list-item-title fw-500 fs-24">Add to Chrome</h1>
+                     <p class="-list-item-des fw-400 fs-16">Minimum version 62</p>
+                     <button class="-list-item-btn"><a href="">Add & Install Extension</a></button>
+                 </div>
+                 <div class="download-list-item">
+                    <span class="-list-item-image">
+                        <img src="./assets/logo-firefox.svg" alt="Firefox">
+                    </span>
+                    <h1 class="-list-item-title fw-500 fs-24">Add to Firefox</h1>
+                    <p class="-list-item-des fw-400 fs-16">Minimum version 55</p>
+                    <button class="-list-item-btn"><a href="">Add & Install Extension</a></button>
+                </div>
+                <div class="download-list-item">
+                    <span class="-list-item-image">
+                        <img src="./assets/logo-opera.svg" alt="Opera">
+                    </span>
+                    <h1 class="-list-item-title fw-500 fs-24">Add to Opera</h1>
+                    <p class="-list-item-des fw-400 fs-16">Minimum version 46</p>
+                    <button class="-list-item-btn"><a href="">Add & Install Extension</a></button>
+                </div>
+             </div>
+         </section>
+         <section class="section" id="QandA">
+             <div id="QandA-title">
+                 <h1 class="fw-500 fs-30">Frequently Asked Questions</h1>
+                 <p class="fw-400 fs-14">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+             </div>
+             <div id="QandA-content">
+                 <div class="QandA-item">
+                     <div class="QandA-question">
+                         <h1 class="fw-400 fs-20">What is Bookmark?</h1>
+                     </div>
+                     <div class="QandA-answer">
+                         <p class="fw-400 fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+                     </div>
+                 </div>
+                 <div class="QandA-item">
+                    <div class="QandA-question">
+                        <h1 class="fw-400 fs-20">How can I request a new browser?</h1>
+                    </div>
+                    <div class="QandA-answer">
+                        <p class="fw-400 fs-14">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                    </div>
+                </div>
+                <div class="QandA-item">
+                    <div class="QandA-question">
+                        <h1 class="fw-400 fs-20">Is there a mobile app?</h1>
+                    </div>
+                    <div class="QandA-answer">
+                        <p class="fw-400 fs-14">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+                    </div>
+                </div>
+                <div class="QandA-item">
+                    <div class="QandA-question">
+                        <h1 class="fw-400 fs-20">What about other Chromium browsers?</h1>
+                    </div>
+                    <div class="QandA-answer">
+                        <p class="fw-400 fs-14">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+                    </div>
+                </div>
+             </div>
+             <button id="QandA-btn"><a href="">More Info</a></button>
+         </section>
+         <section class="section" id="banner">
+             <div id="banner-content">
+                 <p class="fw-400 fs-16">35,000+ already joined</p>
+                 <h1 class="fw-500 fs-30">Stay up-to-date with what we’re doing</h1>
+             </div>
+             <form action="" id="banner-form">
+                <label for="email-input" class="email-label">
+                    <input type="email" name="email" id="email-input" placeholder="Enter your email address">
+                    <div>
+                        <p class="fw-400 fs-12">Whoops, make sure it's an email</p>
+                    </div>
+                </label>
+                <button id="email-btn" type="button">Contact Us</button>
+             </form>
+         </section>
+    </main>
+    <footer>
+        <div id="footer-container">
+            <div id="footer-left">
+                <div id="footer-logo">
+                    <img src="./assets/logo-bookmark-footer.svg" alt="footer-logo">
+                </div>
+                <ul id="footer-menu">
+                    <li class="-menu-item fw-400 fs-14"><a href="">FEATURES</a></li>
+                    <li class="-menu-item fw-400 fs-14"><a href="">PRICING</a></li>
+                    <li class="-menu-item fw-400 fs-14"><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <div id="footer-right">
+                <span class="footer-social-item"><img src="./assets/icon-facebook.svg" alt="footer facebook"></span>
+                <span class="footer-social-item"><img src="./assets/icon-twitter.svg" alt="footer twitter"></span>
+            </div>
+        </div>
+    </footer>
+    <footer>
+        <p class="attribution fs-12">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Hoc Nguyen Huu</a>.
+        </p>
+      </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>

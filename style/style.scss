@@ -1,0 +1,39 @@
+* {
+    margin:0px;
+    padding:0px;
+    border:none;
+    outline:none;
+    list-style-type: none;
+    appearance: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:inherit;
+    fill: currentColor;
+}
+img {
+    display:block;
+}
+:root {
+    --primary-soft-blue: hsl(231, 69%, 60%);
+    --primary-soft-red: hsl(0, 94%, 66%);
+    --neutral-grayish-blue: hsl(229, 8%, 60%);
+    --neutral-very-dark-blue: #252b46;
+}
+@mixin button($w,$h,$color,$colortext) {
+    width: $w;
+    height: $h;
+    border-radius: 5px;
+    background-color: $color;
+    border: 2px solid $color;
+    color: $colortext;
+    font-weight: 400;
+    font-size: 14px;
+    &:hover {
+        background-color: transparent;
+        color: $color;
+    }
+}
+@import "font";
+@import "header";
+@import "body";
+@import "footer";
